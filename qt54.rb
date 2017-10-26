@@ -16,12 +16,6 @@ class Qt54 < Formula
   mirror "https://www.mirrorservice.org/sites/download.qt-project.org/official_releases/qt/5.4/5.4.2/single/qt-everywhere-opensource-src-5.4.2.tar.xz"
   sha256 "8c6d070613b721452f8cffdea6bddc82ce4f32f96703e3af02abb91a59f1ea25"
 
-  bottle do
-    root_url "https://github.com/PX4/homebrew-px4/releases/download/v1.0.0/"
-    revision 1
-    sha256 "d2299857a7c3f71a87df86ab12e4f621874e3e2474324abfe90087c7192d66ad" => :yosemite
-  end
-
   head "https://code.qt.io/qt/qt5.git", :branch => "5.4", :shallow => false
 
   keg_only "Qt 5 conflicts Qt 4 (which is currently much more widely used)."
